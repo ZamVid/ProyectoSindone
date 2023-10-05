@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sindone de Turin</title>
+    <script>
+        function cargarContenido(url) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState === 4 && this.status === 200) {
+                    document.getElementById("contenido").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", url, true);
+            xhttp.send();
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>La Sindone de Turin</h1>
+        <nav>
+            <a href="javascript:void(0);" onclick="cargarContenido('Sindone1.html')">Que es?</a> |
+            <a href="javascript:void(0);" onclick="cargarContenido('Sindone2.html')">Historia</a> |
+            <a href="javascript:void(0);" onclick="cargarContenido('Sindone3.html')">Analisis cientifico</a> |
+            <a href="javascript:void(0);" onclick="cargarContenido('Sindone4.html')">Autopsia</a>|
+            <a href="javascript:void(0);" onclick="cargarContenido('Sindone0.html')">Entierro</a>|
+            <a href="javascript:void(0);" onclick="cargarContenido('Sindone5.html')">Otras reliquias y la Sindone</a>
+        </nav>
+    </header>
+    <div id="contenido">
+        <!-- El contenido de los otros documentos se cargará aquí -->
+    </div>
+</body>
+</html>
