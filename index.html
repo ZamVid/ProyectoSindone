@@ -1,45 +1,95 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Sindone de Turin</title>
-    <script>
-        function cargarContenido(url) {
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function () {
-                if (this.readyState === 4 && this.status === 200) {
-                    document.getElementById("contenido").innerHTML = this.responseText;
-                }
-            };
-            xhttp.open("GET", url, true);
-            xhttp.send();
-        }
-    </script>
-    <link rel="stylesheet" href="estilos.css">
+    <title>La Sindone de Turin</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <script src="scripts.js" defer></script>
 </head>
 
 <body>
     <header>
+        <div class="user-buttons">
+            <a href="suscribe.html" class="btn">Suscribirme</a>
+        </div>
+        <div class="user-buttons-container">
+            <a href="login.html" class="btn">Log In</a>
+        </div>        
         <h1>La Sindone de Turin</h1>
-        <nav>
-            <a href="javascript:void(0);" onclick="cargarContenido('Sindone1.html')">Que es?</a> |
-            <a href="javascript:void(0);" onclick="cargarContenido('Sindone2.html')">Historia</a> |
-            <a href="javascript:void(0);" onclick="cargarContenido('Sindone3.html')">Analisis cientifico</a> |
-            <a href="javascript:void(0);" onclick="cargarContenido('Sindone4.html')">Autopsia</a>|
-            <a href="javascript:void(0);" onclick="cargarContenido('Sindone0.html')">Entierro</a>|
-            <a href="javascript:void(0);" onclick="cargarContenido('Sindone5.html')">Otras reliquias y la Sindone</a>
-        </nav>
     </header>
-    <div id="contenido">
-        <!-- El contenido de los otros documentos se cargará aquí -->
+    <nav>
+        <ul>
+            <li><a href="Sindone2.html">Historia</a></li>
+            <li><a href="Sindone3.html">Análisis Científico</a></li>
+            <li><a href="Sindone4.html">Autopsia</a></li>
+            <li><a href="Sindone0.html">Entierro</a></li>
+            <li><a href="Sindone5.html">Otras reliquias y la Sindone</a>
+            <li><a href="/foro.html">Foro</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            </li>
+        </ul>
+    </nav>
+    <div class="ad-container">
+        <img src="C:\Users\emili\Downloads\ProyectoSindone-main\imagenes\add1.jpg" alt="Anuncio 1"
+            style="max-width: 100%; margin: 0 auto;">
+        <a href="http://www.blankwebsite.com/">
+            <h2>Apuesta en BetPulse!</h2>
+        </a>
+        <img src="C:\Users\emili\Downloads\ProyectoSindone-main\imagenes\add2.jpg" alt="Anuncio 1"
+            style="max-width: 80%; margin: 0 auto;">
+        <a href="http://www.blankwebsite.com/">
+            <h2>Visita HSYAH!</h2>
+        </a>
+        <img src="C:\Users\emili\Downloads\ProyectoSindone-main\imagenes\add3.jpg" alt="Anuncio 1"
+            style="max-width: 80%; margin: 0 auto;">
+        <a href="http://www.blankwebsite.com/">
+            <h2>Compra en SportsWorld!</h2>
+        </a>
     </div>
-    <footer>
-        <h3>Algunas ilustraciones son extraidas de libros sobre la Sindone de Turin, de parte del Centro Español de
-            Sindonologia</h3>
-        <h3>Tambien se ha ocupado para ilustrar esculturas y dibujos de Giulio Ricci, Juan Manuel Miñarro Lopez y
-            Lorenzo Ferri</h3>
-    </footer>
+    <div class="container">
+        <h2>¿Qué es?</h2>
+        <p>La Sindone de Turin es un lienzo de lino de aproximadamente 4.41 mts. de largo y 1.13 mts de ancho. En la
+            tela
+            se puede apreciar la figura de
+            un hombre desnudo, con manchas de sangre en todo el cuerpo. Otra cosa notable son marcas simétricas y
+            paralelas
+            que se encuentran a los lados de la figura central, son quemaduras que fueron consecuencia de
+            un incendio en 1532 en Chambery, Francia</p>
+            <div class="slider-container">
+                <div class="slider" id="slider1">
+                    <div class="slide">
+                        <img src="imagenes/sindone-completo.jpg" alt="Imagen 1">
+                    </div>
+                    <div class="slide">
+                        <img src="imagenes/cara-tela.jpg" alt="Imagen 2">
+                    </div>
+                </div>
+            </div>
+        <p>Se encuentra actualmente en la Catedral de San Juan Bautista en Turin, Italia desde 1578, y solo se realiza
+            una
+            ostencion (excibicion publica del lienzo) cuando el papa lo autoriza o en los años santos (cada 25 años)</p>
+            <div class="slider-container">
+                <div class="slider" id="slider2">
+                    <div class="slide">
+                        <img src="imagenes/Duomo_Torino.jpg" alt="Imagen 3">
+                    </div>
+                    <div class="slide">
+                        <img src="imagenes/tela-catedral.jpg" alt="Imagen 4">
+                    </div>
+                    <div class="slide">
+                        <img src="imagenes/catedral-turin.jpg" alt="Imagen 5">
+                    </div>
+                </div>
+            </div>
+        
+        <p>Segun la tradicion cristiana este es uno de los lienzos usados en la sepultura de Jesucristo despues de su
+            crucifixion, y que al momento de su resurreccion su imagen quedo grabada en la tela</p>
+    </div>
 </body>
+<footer>
+    <div class="contact-section">
+    </div>
+    <em>Copyright &copy; <time>2023</time> AreCodes</em>
+</footer>
 
 </html>
